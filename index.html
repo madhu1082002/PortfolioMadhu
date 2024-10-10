@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <title>Grid Collage Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <header class="header">
+            <div class="logo">
+                <img src="image-removebg-preview (2).png" alt="Logo">
+            </div>
+            <i class="bx bx-menu " id="menu-icon"> 
+            </i>
+            <nav class="navbar">
+                <a  href="#home">Home</a>
+                <a  href="#about">About</a>
+                <a  href="#services">Services</a>
+                <a  href="#projects">Projects</a>
+                <a  href="#gallery">Gallery</a>
+            </nav>
+            <button class="gradient-btn">Contact Me</button>
+       </header>
+       <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hey! Greetings! Delve Into My Realm<span> Hi, It's <span>Madhu</span></h1>
+            <h3>
+                <P>Hi there! I am Madhusivasankari Muthukumar, an enthusiastic Mechanical Engineering aspirant with a passion for technology, innovation, and problem-solving. With hands-on experience in designing, fabricating, and leading engineering projects, I am adaptive, dedicated, and always ready to explore new realms of engineering and technology.</P>>
+            </h3>
+                 <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="#" class="social-link twitter">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+
+                 <!-- Instagram Popup -->
+                <div id="instagram-popup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup('instagram-popup')">&times;</span>
+                            <h2>Instagram Handle</h2>
+                                <p>@LIFE_THATWELIVE</p>
+                    </div>
+                </div>
+
+                 <!-- LinkedIn Popup -->
+                <div id="linkedin-popup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup('linkedin-popup')">&times;</span>
+                            <h2>LinkedIn Profile</h2>
+                                <p>@your_linkedin_handle</p>
+                    </div>
+                </div>
+
+                <!-- Twitter Popup -->
+                <div id="twitter-popup" class="popup-overlay">
+                    <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('twitter-popup')">&times;</span>
+                        <h2>Twitter Handle</h2>
+                        <p>@your_twitter_handle</p>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="cv.pdf" download class ="btn"> Download CV</a>
+                    <a href="#contact" class="btn"> Contact</a> 
+                </div>
+        </div>
+        <div class="home-img">
+            <img src="image.jpg" alt="">
+        </div>
+       </section>
+       <section class="about" id="about">
+            <div class="about-img">
+                <img src="image1.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2>About <span> Me </span></h2>
+                <p>As a Mechanical Engineering student at Sri Krishna College of Engineering and Technology, I have developed a strong foundation in various engineering domains, including Thermodynamics, Product Design, and Ergonomics. I am passionate about IoT, Cloud Computing, AR/VR Development, and applying innovative solutions to real-world challenges.
+
+                    My journey has taken me through diverse engineering projects, internships, and hands-on experiences, 
+                    allowing me to build expertise in CAD Modeling, Simulation, FEA, Non-destructive Testing, 
+                    Welding Processes, and more. With a strong work ethic, team spirit, and leadership skills, 
+                    I thrive in dynamic environments and strive to deliver excellence in every project. 
+                    <span id="more-text" style="display: none;">
+                        <br>
+
+                        Co-Curricular & Extra-Curricular Activities: <br>
+                        State Basketball Player <br>
+                        Lead for Society of Automation and Robotics (SAR)<br>
+                        Editor/Writer for Campus Publications<br>
+                        Engaged in Environmental and Sustainability Initiatives<br>
+                        Drawing<br>Painting<br> Listening to Music.
+                </p>
+                <a href="#" class="btn" onclick="toggleReadMore(event)">Read More</a>
+            </div>                    
+                <div class="extra-content" id="extra-content" style="display:none;">
+                        <p>WHATS MORE!!</p>
+                    </div>
+                </div>
+            
+                <div class="education-section">
+                    <h2>Education</h2>
+                    <div class="degree">
+                        <h3>Bachelor's in Mechanical Engineering</h3>
+                        <p>Sri Krishna College of Engineering and Technology, Coimbatore (2020 – 2024)</p>
+                        <p><strong>Current CGPA:</strong> <span class="cgpa">9.16</span></p>
+                    </div>
+            
+                    <div class="pre-university">
+                        <h3>Pre-University Education</h3>
+                        <p>Chavara Vidya Bhavan, Coimbatore</p>
+                        <p><strong>10th:</strong> 97.5% | <strong>12th:</strong> 79.9%</p>
+                    </div>
+                </div>
+                    </div>
+       </section>
+
+       <section class="workshops-trainings" id="workshops">
+        <h2 class="heading">Workshops & Trainings</h2>
+        <div class="workshops-container">
+            <div class="workshop-item">
+                <h3>Industrial Practices</h3>
+                <p>Hyundai Motor Pvt Ltd</p>
+            </div>
+            <div class="workshop-item">
+                <h3>Trends in Automotive Parts System and Application</h3>
+                <p>SAE INDIA</p>
+            </div>
+            <div class="workshop-item">
+                <h3>Composite Material for Ballistic Protection</h3>
+                <p>UNSW</p>
+            </div>
+            <div class="workshop-item">
+                <h3>FEA Techniques in New Product Development</h3>
+                <p>L&T</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Project Intern | Caterpillar Inc., Machines Division, Chennai</h3>
+                <span>(Jun 2023 – Aug 2023)</span>
+                <ul>
+                    <li>Conducted analyses under the Structured Factory Operation Department.</li>
+                    <li>Focused on eliminating CPS 8 wastes, improving quality, and reducing process time and cost.</li>
+                    <li>Worked on value chain optimization, prework for Robo Welding, and safety analysis.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Project Intern | Supply Chain Management (SCM) at Caterpillar Inc.</h3>
+                <span>(Jun 2023)</span>
+                <ul>
+                    <li>Gained valuable experience in logistics, procurement, and supply chain operations.</li>
+                    <li>Involved in inventory management, demand forecasting, supplier relationship management, and transportation cost analysis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="worklife" id="worklife">
+        <h2 class="heading">Worklife & My Interests</h2>
+        <div class="worklife-container">
+            <div class="worklife-box">
+                <div class="Worklife"></div>
+                    <i class="bx bxl figma"></i>
+                    <h4>display the role u play</h4>
+                    <p>----------------</p>
+                </div>
+                <img src="work.jpg" alt="" class="worklife-image">
+            </div>
+            <div class="worklife-item">
+                <img src="work1.jgp" alt="  " class="worklife-image">
+            </div>
+        </div>
+    </section> -->
+    
+    
+       <!-- <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bxl figma"></i>
+                    <h4>display the role u play</h4>
+                    <p>----------------</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bxl code"></i>
+                    <h4>display anything</h4>
+                    <p>----------------</p>
+                </div>
+            </div>
+            <div class="services-box"></div>
+                <div class="service-info">
+                    <i class="bx bxl curly"></i>
+                    <h4>display anything</h4>
+                    <p>----------------</p>
+                </div>
+            </div>
+        </div>
+       </section> -->
+
+
+       <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-box">
+            <div class="project-card">
+            <img src="project1.png" alt="">
+            <h3>Dirt Bike Fabrication</h3>
+            <p>Role: Project Lead | Team Size: 10<br>
+                Designed and fabricated a Dirt Bike using SolidWorks for 3D modeling, 
+                conducted R&D, and optimized its performance. <br>
+                Presented the project in competitions, earning accolades for innovation and design.<br>
+                "https://drive.google.com/drive/folders/11sCS_Rppn8Qk3AuO_xIrTe3r8-BeOi6D?usp=drive_link"
+            </p>
+            <div class="btn" onclick="toggleProjectDetails()">Review Project</div>
+            <div class="project-details" id="projectDetails">
+                <p>Here is the detailed information about the project. This section contains a comprehensive description of the project, including objectives, outcomes, challenges faced, and the technologies used.</p>
+                <ul>
+                    <li>Detail 1: Explanation of a specific aspect</li>
+                    <li>Detail 2: Additional insights into the project</li>
+                    <li>Detail 3: Technical tools or methodologies used</li>
+                </ul>
+                <div class="btn" onclick="toggleProjectDetails()">Show Less</div>
+        </div>
+        </div>
+        <div class="project-card">
+            <img src="project2.png" alt="">         
+            <h3>Smart Toilet</h3> 
+            <p>Role: Project Lead | Team Size: 4 <br>
+                Developed an MVP using cutting-edge technology, sensors, and Embedded C. 
+                Participated in events nationwide, showcasing the project’s application in Industry 4.0.
+            <br>
+            https://youtu.be/6CHmNUW-4nc?si=HQh4aJGJCl-kY17Z
+        </p>
+        <div class="btn" onclick="toggleProjectDetails()">Review Project</div>
+        <div class="project-details" id="projectDetails">
+            <p>Here is the detailed information about the project. This section contains a comprehensive description of the project, including objectives, outcomes, challenges faced, and the technologies used.</p>
+            <ul>
+                <li>Detail 1: Explanation of a specific aspect</li>
+                <li>Detail 2: Additional insights into the project</li>
+                <li>Detail 3: Technical tools or methodologies used</li>
+            </ul>
+            <div class="btn" onclick="toggleProjectDetails()">Show Less</div>
+        </div>
+        </div>
+
+        <div class="project-card">
+            <img src="project3.png" alt="">         
+            <h3>Portable Decoction (Kashaya) Making Machine</h3> 
+            <p>Designed a machine with biometric sensors, RFID tags, and an Android interface to provide quality health drinks. <br>
+            It is cost-effective and efficient, equipped with advanced user interface features.
+        <br>
+        https://drive.google.com/drive/folders/1JFqCoSK3fmnGxSdiHONmMWMl_XLbCCND?usp=drive_link</p>
+        <div class="btn" onclick="toggleProjectDetails()">Review Project</div>
+        <div class="project-details" id="projectDetails">
+            <p>Here is the detailed information about the project. This section contains a comprehensive description of the project, including objectives, outcomes, challenges faced, and the technologies used.</p>
+            <ul>
+                <li>Detail 1: Explanation of a specific aspect</li>
+                <li>Detail 2: Additional insights into the project</li>
+                <li>Detail 3: Technical tools or methodologies used</li>
+            </ul>
+            <div class="btn" onclick="toggleProjectDetails()">Show Less</div>
+        </div>
+        </div>
+
+
+        <div class="project-card">
+            <img src="project4.png" alt="">         
+            <h3>Smart Menstrual Hygiene Management System</h3> 
+            <p>Developed "FEMFLARE," a sanitary pad disposal incinerator cum vending machine. 
+                The system incinerates used pads and converts the ash into reusable material while ensuring UV sterilization and pollution control.
+            <br>
+            https://drive.google.com/drive/folders/1JFqCoSK3fmnGxSdiHONmMWMl_XLbCCND?usp=drive_link</p>
+            <div class="btn" onclick="toggleProjectDetails()">Review Project</div>
+            <div class="project-details" id="projectDetails">
+                <p>Here is the detailed information about the project. This section contains a comprehensive description of the project, including objectives, outcomes, challenges faced, and the technologies used.</p>
+                <ul>
+                    <li>Detail 1: Explanation of a specific aspect</li>
+                    <li>Detail 2: Additional insights into the project</li>
+                    <li>Detail 3: Technical tools or methodologies used</li>
+                </ul>
+                <div class="btn" onclick="toggleProjectDetails()">Show Less</div>
+        </div>        
+        </div>
+       </section>
+
+    <section class="gallery" id="gallery">
+            <h2 class="heading">Gallery</h2>
+        <div class="gallery">
+           
+            <div class="gallery-slider">
+                <div class="slides">
+                    <div class="slide"><img src="image2.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image6.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image7.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image9.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image12.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image18.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image26.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image22.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image23.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image27.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image29.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image41.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image42.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image37.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image38.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image35.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image36.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image44.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image45.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image31.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image3.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image4.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image5.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image8.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image10.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image11.jpg" alt="Image 5"></div>                    
+                    <div class="slide"><img src="image13.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image14.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image15.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image16.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="image17.jpg" alt="Image 1"></div>                    
+                    <div class="slide"><img src="image19.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image20.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="image21.jpg" alt="Image 5"></div>       
+                    <div class="slide"><img src="image24.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image25.jpg" alt="Image 4"></div>    
+                    <div class="slide"><img src="image28.jpg" alt="Image 2"></div>                    
+                    <div class="slide"><img src="image30.jpg" alt="Image 4"></div>                    
+                    <div class="slide"><img src="image32.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image33.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image34.jpg" alt="Image 3"></div>                             
+                    <div class="slide"><img src="image39.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="image40.jpg" alt="Image 4"></div>    
+                    <div class="slide"><img src="image43.jpg" alt="Image 2"></div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class="contact" id="contact">    
+        <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="#">   
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text"
+                        placeholder="Full Name">
+                        <input type="email" 
+                        placeholder="Email">
+                    </div>
+                <div class="input-box">
+                    <input type="number"
+                    placeholder="Phone Number">
+                    <input type="text" 
+                    placeholder="Subject">
+                </div>
+                </div>
+                <div class="input-group-2">
+                    <textarea name="" id=""
+                    placeholder="Your Message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">Services                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">Project
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery
+                    </a>
+                </li>
+            </ul>>
+            <p class="copyright">
+                @ Madhu | All Rights Reserved
+            </p>
+        </footer>
+
+    <script src="script.js">
+    
+        document.getElementById("read-more-btn").addEventListener("click", function() {
+            var extraContent = document.getElementById("extra-content");
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                this.textContent = "Read Less"; // Change button text
+            } else {
+                extraContent.style.display = "none";
+                this.textContent = "Read More"; // Change button text
+            }
+        });
+    
+    </script>
+  </body>
+</html>
